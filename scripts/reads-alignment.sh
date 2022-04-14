@@ -21,6 +21,7 @@ SAMPLES="SRR15042704 SRR15042705 SRR15042706 SRR15042707"
 for SAMPLE in $SAMPLES; do
 
         hisat2 \
+                 --fr\
                  -x ${FNA_DIR}/GCF_000001405.39_GRCh38.p13_genomic.fna_index_hisat2 \
                  -1 ${SAMPLE}_1.trimmed.fastq \
                  -2 ${SAMPLE}_2.trimmed.fastq \
